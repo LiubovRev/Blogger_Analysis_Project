@@ -12,6 +12,8 @@ import time
 
 
 def prepare_data(authors_df, companies_df, posts_df):
+    """Cleans and processes input dataframes for further analysis"""
+    
     # Columns to snake case
     for df in [authors_df, companies_df, posts_df]:
         df.columns = df.columns.str.strip().str.lower().str.replace(' ', '_', regex=False)
