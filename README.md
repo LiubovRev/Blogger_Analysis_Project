@@ -27,13 +27,13 @@ Everything runs from **`src.py`**.
 
 ## 📂 Structure
 
-├── src.py # All functions & pipeline
-├── README.md # Documentation
-├── requirements.txt # Dependencies
-└── data/
-├── authors.csv
-├── companies.csv
-└── posts.csv
+├── src.py # All functions & pipeline  
+├── README.md # Documentation  
+├── requirements.txt # Dependencies  
+└── data/  
+├── authors.csv  
+├── companies.csv  
+└── posts.csv  
 
 
 ---
@@ -86,17 +86,18 @@ recs = content_based_recommendations(companies_df, df, analysis, themes)
 display_recommendations(recs, companies_df)
 
 create_enhanced_visualizations(df, combined_features, labels, analysis, themes)
-
+```
 
 ## 📊 Example Output
 
-Cluster: Top Influencers
+```Cluster: Top Influencers
 High engagement + high influence
 - Size: 14 authors
 - Influence: 95.2
 - Engagement: 88.1
 - Keywords: software • development • AI
 - Featured Authors: Alice | Bob | Charlie
+```
 
 ## 🔄 Workflow Diagram
 
