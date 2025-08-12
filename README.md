@@ -25,17 +25,20 @@ Everything runs from **`src.py`**.
 
 ---
 
+
 ## 📂 Structure
-
-├── src.py # All functions & pipeline  
-├── README.md # Documentation  
-├── requirements.txt # Dependencies  
+```plaintext
+.
+├── src.py             # All functions & pipeline  
+├── README.md          # Documentation  
+├── requirements.txt   # Dependencies  
+├── main.ipynb         # Notebook version of the analysis  
+├── data.zip           # Dataset archive  
 └── data/  
-├── authors.csv  
-├── companies.csv  
-└── posts.csv  
-
-
+    ├── authors.csv  
+    ├── companies.csv  
+    └── posts.csv  
+```
 ---
 
 ## ⚙️ Install & Run
@@ -90,25 +93,26 @@ create_enhanced_visualizations(df, combined_features, labels, analysis, themes)
 
 ## 📊 Example Output
 
-```Cluster: Top Influencers
-High engagement + high influence
-- Size: 14 authors
-- Influence: 95.2
-- Engagement: 88.1
-- Keywords: software • development • AI
+```Cluster: Top Influencers  
+High engagement + high influence  
+- Size: 14 authors  
+- Influence: 95.2  
+- Engagement: 88.1  
+- Keywords: software • development • AI  
 - Featured Authors: Alice | Bob | Charlie
 ```
 
 ## 🔄 Workflow Diagram
 
 flowchart TD
-    A[Load CSV Data<br>(authors.csv, companies.csv, posts.csv)] --> B[prepare_data()]
-    B --> C[extract_content_features()]
-    C --> D[create_enhanced_features()]
-    D --> E[enhanced_clustering_with_content()]
-    E --> F[analyze_cluster_content_themes()]
-    F --> G[detailed_cluster_analysis_with_content()]
-    G --> H[content_based_recommendations()]
-    H --> I[display_recommendations()]
-    E --> J[create_enhanced_visualizations()]
+    A[Load CSV Data<br>(authors.csv, companies.csv, posts.csv)] --> B[prepare_data()]  
+    B --> C[extract_content_features()]  
+    C --> D[create_enhanced_features()]  
+    D --> E[enhanced_clustering_with_content()]  
+    E --> F[analyze_cluster_content_themes()]  
+    F --> G[detailed_cluster_analysis_with_content()]  
+    G --> H[content_based_recommendations()]  
+    H --> I[display_recommendations()]  
+    E --> J[create_enhanced_visualizations()]  
+
 
