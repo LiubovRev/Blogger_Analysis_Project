@@ -102,17 +102,4 @@ High engagement + high influence
 - Featured Authors: Alice | Bob | Charlie
 ```
 
-## 🔄 Workflow Diagram
-
-flowchart TD
-    A[Load CSV Data<br>(authors.csv, companies.csv, posts.csv)] --> B[prepare_data()]  
-    B --> C[extract_content_features()]  
-    C --> D[create_enhanced_features()]  
-    D --> E[enhanced_clustering_with_content()]  
-    E --> F[analyze_cluster_content_themes()]  
-    F --> G[detailed_cluster_analysis_with_content()]  
-    G --> H[content_based_recommendations()]  
-    H --> I[display_recommendations()]  
-    E --> J[create_enhanced_visualizations()]  
-
 
